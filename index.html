@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts Viewer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 p-6">
+    <h1 class="text-2xl font-bold mb-4">Posts Viewer</h1>
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Search posts..."
+      class="border p-2 w-full mb-4"
+    />
+    <table class="min-w-full bg-white">
+      <thead>
+        <tr>
+          <th class="py-2 px-4 border">ID</th>
+          <th class="py-2 px-4 border">Title</th>
+          <th class="py-2 px-4 border">Body</th>
+        </tr>
+      </thead>
+      <tbody id="postsTable"></tbody>
+    </table>
+    <script type="module" src="js/posts.js"></script>
+  </body>
+</html>

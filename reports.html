@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 p-6">
+    <h1 class="text-2xl font-bold mb-4">Reports</h1>
+    <p class="mb-2">Total posts containing "rerum": <span id="rerumCount"></span></p>
+    <h2 class="text-xl font-semibold mt-4">Posts per User</h2>
+    <table class="min-w-full bg-white mt-2">
+      <thead>
+        <tr>
+          <th class="py-2 px-4 border">User ID</th>
+          <th class="py-2 px-4 border">Post Count</th>
+        </tr>
+      </thead>
+      <tbody id="reportTable"></tbody>
+    </table>
+    <script type="module" src="js/reports.js"></script>
+  </body>
+</html>
